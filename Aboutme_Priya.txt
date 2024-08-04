@@ -2,4 +2,3 @@ I'm Priya Iyer. I like learning data science. I work for a bank which uses data 
 
 This to test git branch command
 
-Testing git gui now, to commit and push
