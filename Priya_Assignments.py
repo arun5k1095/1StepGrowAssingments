@@ -39,7 +39,7 @@ print("Half of the sentence entered is shown as: ", sentence[:end:])
 
 # Ask user to enter a long sentence , Replace all the occurences of vowels with # , and print the modified content.
 sentence = input("Please enter a long sentence: ")
-print("Your sentence replacing all vowels with # is shown as: ", sentence.replace("a","#").replace("e","#").replace("i","#").replace("o","#").replace("o","#").replace("u","#"))
+print("Your sentence replacing all vowels with # is shown as: ", sentence.lower().replace("a","#").replace("e","#").replace("i","#").replace("o","#").replace("o","#").replace("u","#"))
 
 
 # Ask user to enter his email id , fetch the user name from the string and print it.
@@ -48,7 +48,7 @@ end = email.index("@")
 print("Your name extracted from email address is: ", email[:end:])
 
 # Ask user to enter a long sentence , count the total number of Vowels that are present in the sentence.
-sentence = input("Please enter a long sentence: ")
+sentence = input("Please enter a long sentence: ").lower()
 vowels = sentence.count("a")
 vowels = vowels + sentence.count("e")
 vowels = vowels + sentence.count("i")
