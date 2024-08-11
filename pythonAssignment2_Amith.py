@@ -9,6 +9,7 @@ print("First two elements:", first_two)
 last_element = sports[-1]
 print("Last element:", last_element)
 
+
 #Using the sports list, how would you create a new list containing the first three sports?
 # Creating a new list with the first three sports
 first_three_sports = sports[:3]
