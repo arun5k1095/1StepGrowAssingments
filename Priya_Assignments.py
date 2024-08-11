@@ -70,4 +70,79 @@ print("Combined sports and outdoor games as a single list: ", sports)
 
 
 
+# ASSIGNMENT | 11th AUG | DICTIONARY
+
+# Q1
+students_scores = {
+    "Emma": [85, 90, 78],
+    "Liam": [92, 88, 95],
+    "Olivia": [70, 75, 80],
+    "Noah": [88, 82, 85],
+    "Ava": [95, 93, 97]
+}
+# Print the average score of Olivia
+olivia_avg = round((students_scores["Olivia"][0] + students_scores["Olivia"][1] + students_scores["Olivia"][2])/3,2)
+print("Average score of Olivia: ", olivia_avg)
+
+# Print the difference of average score of Liam and Olivia
+liam_avg = round((students_scores["Liam"][0] + students_scores["Liam"][1] + students_scores["Liam"][2])/3,2)
+print("Average score of Liam: ", liam_avg)
+print("Difference in average score of Liam and Olivia: ", liam_avg - olivia_avg)
+
+#Q2
+
+students_scores = {
+    "Emma": {"Math": 85, "Science": 90, "English": 78},
+    "Liam": {"Math": 92, "Science": 88, "English": 95},
+    "Olivia": {"Math": 70, "Science": 75, "English": 80},
+    "Noah": {"Math": 88, "Science": 82, "English": 85},
+    "Ava": {"Math": 95, "Science": 93, "English": 97}
+}
+# Update the Score in Math for Emma to 70
+print("Emma's score in Math before change: ", students_scores["Emma"]["Math"])
+students_scores["Emma"]["Math"] = 70
+print("Emma's score in Math after change: ", students_scores["Emma"]["Math"])
+
+# Ass a subject "Python" for Noah , and provide the score 95 for this subject.
+print("Noah's current scores in all subjects: ", students_scores["Noah"])
+students_scores["Noah"]["Python"] = 95
+print("Noah's scores after adding Python as new subject: ", students_scores["Noah"])
+
+# Print the difference of score in Science for Liam and Ava
+print("Difference in score in Science for Liam and Ava: ", students_scores["Liam"]["Science"] - students_scores["Ava"]["Science"])
+
+# Add your name to this dicitonary , and feed in your scores for all the subjects.
+students_scores["Priya"] = {"Math" : 99, "Science" : 96, "English" : 95, "Python" : 97}
+print("Added new student 'Priya' in the score list: ", students_scores["Priya"])
+
+
+#Q3
+
+city_details = {
+    "New York": {"Population": 8419000, "Country": "USA"},
+    "Los Angeles": {"Population": 3980000, "Country": "USA"},
+    "Chicago": {"Population": 2716000, "Country": "USA"},
+    "Houston": {"Population": 2328000, "Country": "USA"},
+    "Phoenix": {"Population": 1690000, "Country": "USA"}
+}
+
+# Write a Python program to add a new city, "San Francisco", with a population of 883305 and country "USA" to the city_details dictionary.
+print("City details before change: ", city_details)
+city_details["San Francisco"] = {"Population" : 883305, "Country" : "USA"}
+print("City details after adding 'San Francisco': ", city_details)
+
+# Write a Python program to update the population of "Chicago" to 2800000 in the city_details dictionary.
+print("Chicago population before change: ", city_details["Chicago"]["Population"])
+city_details["Chicago"]["Population"] = 2800000
+print("Chicago population after change: ", city_details["Chicago"]["Population"])
+
+# Write a Python program to remove the city "Phoenix" from the city_details dictionary.
+print("City details before removing Phoenix: ", city_details)
+del city_details["Phoenix"]
+print("City details after removing Phoenix: ", city_details)
+
+# Write a Python program to add a new key "Mayor" with the value "Bill de Blasio" to the "New York" dictionary within city_details.
+print("New York city details before change: ", city_details["New York"])
+city_details["New York"]["Mayor"] = "Bill de Blasio"
+print("New York city details after change: ", city_details["New York"])
 
