@@ -1,5 +1,8 @@
+
+
 #Assignment 1
 # Ask user to enter scores in 3 subjects, calculate the average, and print the results
+
 
 print("Please enter your scores in following subjects")
 Math = float(input("Maths: "))
@@ -55,3 +58,10 @@ vowels = vowels + sentence.count("i")
 vowels = vowels + sentence.count("o")
 vowels = vowels + sentence.count("u")
 print("Count of vowels in your sentence is: ", vowels)
+
+
+# Ask user to provide email id and fetch domain from it
+email = input("Please enter your email address: ")
+print(email.split("@")[-1].split(".")[0])
+
+
