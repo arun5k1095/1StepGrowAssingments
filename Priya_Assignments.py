@@ -22,46 +22,52 @@ SI = (principal * rate_of_interest * duration)/100
 
 print("Simple Interest accrued for the deposit terms mentioned is: Rs ", round(SI,2))
 
-
-#Assignment 3
-# Ask user to enter a long sentence. Convert the whole sentence into upper case and print the result.
-sentence = input("Please enter a long sentence : ")
-print("Your sentence in upper case is shown as: ", sentence.upper())
-
-
-# Ask user to enter his full name , reverse the full name and print it.
-full_name = input("Please enter your full name : ")
-print("Your name in reverse order is: ", full_name[: :-1])
-
-
-#Ask user to enter a long sentence , print only the first half of the sentence.
-sentence = input("Please enter a long sentence : ")
-end = int(len(sentence)/2)
-print("Half of the sentence entered is shown as: ", sentence[:end:])
-
-
-# Ask user to enter a long sentence , Replace all the occurences of vowels with # , and print the modified content.
-sentence = input("Please enter a long sentence: ")
-print("Your sentence replacing all vowels with # is shown as: ", sentence.lower().replace("a","#").replace("e","#").replace("i","#").replace("o","#").replace("o","#").replace("u","#"))
-
-
-# Ask user to enter his email id , fetch the user name from the string and print it.
-email = input("Please enter your email address: ")
-end = email.index("@")
-print("Your name extracted from email address is: ", email[:end:])
-
-# Ask user to enter a long sentence , count the total number of Vowels that are present in the sentence.
-sentence = input("Please enter a long sentence: ").lower()
-vowels = sentence.count("a")
-vowels = vowels + sentence.count("e")
-vowels = vowels + sentence.count("i")
-vowels = vowels + sentence.count("o")
-vowels = vowels + sentence.count("u")
-print("Count of vowels in your sentence is: ", vowels)
-
-
+#"""
 # Ask user to provide email id and fetch domain from it
 email = input("Please enter your email address: ")
 print(email.split("@")[-1].split(".")[0])
+#"""
+
+# ASSIGNMENT 3 | LISTS
+
+# Given the list sports = ['Cricket', 'Football', 'Basketball', 'Tennis', 'Hockey'], how would you access the first two and last elements of the list?
+sports = ["Cricket", "Football", "Basketball", "Tennis", "Hockey"]
+output1 = sports[:2]
+output1.append(sports[-1])
+print("Displaying first 2 and last sport in the list: ", output1)
+
+# Using the sports list, how would you create a new list containing the first three sports?
+output2 = sports[:3]
+print("Displaying first 3 sports in the list: ", output2)
+
+# How would you add the sport 'Badminton' to the sports list?
+sports.append("Badminton")
+print("Adding Badminton to the list of sports: ", sports)
+
+# How would you insert the sport 'Swimming' at the third position in the sports list?
+sports.insert(2,"Swimming")
+print("Added Swimming in 3rd position in sports list: ", sports)
+
+# If you want to remove 'Tennis' from the sports list, which method would you use, and how would you write it?
+sports.remove("Tennis")
+print("Removed Tennis from the sports list: ", sports)
+
+# How would you reverse the order of elements in the sports list?
+sports.reverse()
+print("Reversed sports list: ", sports)
+
+# How would you find the index of 'Basketball' in the sports list?
+print("Position of 'Basketball' in the sports list: ", sports.index("Basketball"))
+
+# If the sports list had multiple occurrences of 'Football', how would you count how many times 'Football' appears in the list?
+sports.append('Football')
+print("Number of times 'Football' is present in the sports list: ", sports.count("Football"))
+
+# How would you combine the sports list with another list called outdoor_games = ['Golf', 'Rugby']?
+outdoor_games = ['Golf', 'Rugby']
+sports = sports + outdoor_games
+print("Combined sports and outdoor games as a single list: ", sports)
+
+
 
 
