@@ -5,6 +5,7 @@ sports = ['Cricket', 'Football', 'Basketball', 'Tennis', 'Hockey']
 # Accessing the first two elements
 first_two = sports[:2]
 print("First two elements:", first_two)
+
 # Accessing the last element
 last_element = sports[-1]
 print("Last element:", last_element)
@@ -35,6 +36,12 @@ print("Sports list after removing Tennis:", sports)
 sports.reverse()
 print("Reversed sports list:", sports)
 
+# Another way to do the above is  , although what you did is correct , just another aproach below :
+sports_reversed = sports[::-1]
+print("Reversed sports list:", sports_reversed)
+
+#______________________________________
+
 #How would you find the index of 'Basketball' in the sports list?
 # Finding the index of 'Basketball'
 basketball_index = sports.index('Basketball')
@@ -51,4 +58,3 @@ outdoor_games = ['Golf', 'Rugby']
 # Combining the two lists
 combined_list = sports + outdoor_games
 print("Combined list:", combined_list)
-
