@@ -146,3 +146,49 @@ print("New York city details before change: ", city_details["New York"])
 city_details["New York"]["Mayor"] = "Bill de Blasio"
 print("New York city details after change: ", city_details["New York"])
 
+
+#Q4
+movie_details = {
+    "Title": "Inception",
+    "Director": "Christopher Nolan",
+    "Release_Year": 2010,
+    "Genres": ["Action", "Sci-Fi", "Thriller"],
+    "Cast": {
+        "Leonardo DiCaprio": "Cobb",
+        "Joseph Gordon-Levitt": "Arthur",
+        "Elliot Page": "Ariadne",
+        "Tom Hardy": "Eames"
+    },
+    "Duration_Minutes": 148,
+    "Rating": 8.8,
+    "Box_Office_Millions": 829.89
+}
+# Update the rating to 9.0.
+print("Movie Rating before change: ", movie_details["Rating"])
+movie_details["Rating"] = 9.0
+print("Movie Rating after change: ", movie_details["Rating"])
+
+#Add a new key-value pair for "Budget" with a value of 3 160 million.
+movie_details["Budget"] = 3160000000
+print("Movie Budget added :", movie_details["Budget"])
+
+# Insert a new cast member into the nested dictionary.
+movie_details["Cast"]["Tom Hanks"] = "Johnny"
+print("New cast added: ", movie_details["Cast"])
+
+#Remove the "Box_Office_Millions" entry.
+print("Movie Box_Office_Millions details: ", movie_details["Box_Office_Millions"])
+del movie_details["Box_Office_Millions"]
+print("Movie details after removing Box_Office_Millions: ", movie_details)
+
+#Add "Mystery" to the genres list.
+movie_details["Genres"].append("Mystery")
+print("Movie details after adding in Genres:", movie_details["Genres"])
+
+#Remove "Sci-Fi" from the genres list.
+print("Movie Genres before change: ", movie_details["Genres"])
+movie_details["Genres"].remove("Sci-Fi")
+print("Movie Genres after change: ", movie_details["Genres"])
+
+
+
