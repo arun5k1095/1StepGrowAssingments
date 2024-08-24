@@ -131,3 +131,48 @@ index=0
 for index in range(final_pos):
     print("The movie",movies[index],"has", len(movies[index]),"characters")
 
+#Ask user to enter a ling sentence. Count the number of vowels in that sentence.
+sentence=input("Enter a long sentence: ")
+vowels="aeiou"
+
+count_vowel=0
+for alphabet in sentence:
+    if alphabet in vowels:
+        count_vowel+=1
+
+print("The number of vowels are: ",count_vowel)
+
+#Another approach
+sentence=input("Enter a long sentence: ").lower()
+total_vowels=sentence.count("a")+sentence.count("e")+sentence.count("i")+sentence.count("o")+sentence.count("u")
+print("The number of vowels are: ",total_vowels)
+
+# The data in the below list needs to be split across two lists.
+# 1 list shall contain positive odd number
+# The other list must contain positive even numbers.
+
+temperatures = [-1,50,6,-46,-20,81,74,41,24,-60,-2,17,23,28,57,29,-16,-4,29,9,11,2,4,6,13,-18]
+pos_even_temp=[]
+pos_odd_temp=[]
+
+for element in temperatures:
+    if element>0:
+        if(element%2==0):
+            pos_even_temp.append(element)
+        else:
+            pos_odd_temp.append(element)
+
+print("Positive odd numbers: ", pos_odd_temp)
+print("Positive even numbers: ", pos_even_temp)
+
+# Keep asking user the number and keep printing its square , until the point user enters 0.
+# The application could be stopped  ,as user provides 0.
+
+#while 2<5:
+while True:
+    num=int(input("Enter a number: "))
+    if(num==0):
+        break
+
+    square=num**2
+    print("The square of", num, "is", square)
