@@ -9,12 +9,14 @@ students_scores = {
 # Print the average score of Olivia
 olivia_scores=students_scores["Olivia"]
 average=(olivia_scores[0]+olivia_scores[1]+olivia_scores[2])/3
+#average=sum(students_scores["Olivia"]) / len(students_scores["Olivia"])
 round_avg=round(average,2)
 print("The average score of Olivia is: ", round_avg)
 
 # Print the difference of average score of Liam and Olivia
 liam_scores=students_scores["Liam"]
 liam_average=(liam_scores[0]+liam_scores[1]+liam_scores[2])/3
+#average=sum(students_scores["Liam"]) / len(students_scores["Liam"])
 round_liam_avg=round(liam_average,2)
 print("The average score of Liam is: ", round_liam_avg)
 diff=abs(round_liam_avg-round_avg)
